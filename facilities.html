@@ -3,44 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facilities | BRIGHT FUTURE PUBLIC SCHOOL</title>
-    <link rel="stylesheet" href="style.css">
+    <title>School Facilities | Radha Krishna EMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .facility-card:hover { transform: translateY(-5px); transition: 0.3s; }
+    </style>
 </head>
-<body>
-    <div id="header-placeholder"></div>
+<body class="bg-gray-50 text-gray-800">
 
-    <main>
-        <header class="page-title-section container">
-            <span class="eyebrow">What We Offer</span>
-            <h1>World-Class Infrastructure</h1>
-        </header>
+    <div id="header"></div>
 
-        <section class="facility-section odd">
-            <div class="facility-image" style="background-image: url('https://images.unsplash.com/photo-1581093588401-fbb62a02f120?crop=entropy&q=80');"></div>
-            <div class="facility-text container">
-                <h3>Hi-Tech Science Labs</h3>
-                <p>Equipped with modern apparatus, our labs encourage practical learning in Physics, Chemistry, and Biology. Experience safety and precision.</p>
+    <section class="bg-[#002147] py-16 text-center text-white">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Facilities</h1>
+        <p class="text-lg opacity-80 max-w-2xl mx-auto px-4">
+            Providing a world-class environment equipped with modern infrastructure to support the holistic development of our students.
+        </p>
+    </section>
+
+    <div class="max-w-7xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="facility-card bg-white rounded-xl shadow-md overflow-hidden border-b-4 border-[#D4AF37]">
+                <div class="h-48 bg-gray-200 flex items-center justify-center text-5xl">🏫</div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-[#002147] mb-2">Smart Classrooms</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Spacious, well-ventilated classrooms equipped with digital learning tools to make education interactive and engaging.
+                    </p>
+                </div>
             </div>
-        </section>
 
-        <section class="facility-section even">
-            <div class="facility-text container">
-                <h3>Interactive Classrooms</h3>
-                <p>Education 4.0 is here. All our classrooms are equipped with interactive smartboards and digital learning modules to enhance engagement.</p>
+            <div class="facility-card bg-white rounded-xl shadow-md overflow-hidden border-b-4 border-[#D4AF37]">
+                <div class="h-48 bg-gray-200 flex items-center justify-center text-5xl">🔬</div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-[#002147] mb-2">Science Laboratories</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        State-of-the-art Physics, Chemistry, and Biology labs that allow students to explore scientific concepts through hands-on experiments.
+                    </p>
+                </div>
             </div>
-            <div class="facility-image" style="background-image: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?crop=entropy&q=80');"></div>
-        </section>
-        
-        <section class="facility-section odd">
-            <div class="facility-image" style="background-image: url('https://images.unsplash.com/photo-1507738978512-35798112892c?crop=entropy&q=80');"></div>
-            <div class="facility-text container">
-                <h3>Digital Library</h3>
-                <p>A serene space housing over 20,000 print titles and robust e-library access, fostering a love for research and reading.</p>
-            </div>
-        </section>
-    </main>
 
-    <div id="footer-placeholder"></div>
+            <div class="facility-card bg-white rounded-xl shadow-md overflow-hidden border-b-4 border-[#D4AF37]">
+                <div class="h-48 bg-gray-200 flex items-center justify-center text-5xl">💻</div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-[#002147] mb-2">Computer Center</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        High-speed internet and modern systems to ensure our students remain digitally literate and ready for the future.
+                    </p>
+                </div>
+            </div>
+
+            <div class="facility-card bg-white rounded-xl shadow-md overflow-hidden border-b-4 border-[#D4AF37]">
+                <div class="h-48 bg-gray-200 flex items-center justify-center text-5xl">📚</div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-[#002147] mb-2">Digital Library</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        A vast collection of academic books, journals, and digital resources to foster a habit of reading and research.
+                    </p>
+                </div>
+            </div>
+
+            <div class="facility-card bg-white rounded-xl shadow-md overflow-hidden border-b-4 border-[#D4AF37]">
+                <div class="h-48 bg-gray-200 flex items-center justify-center text-5xl">⚽</div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-[#002147] mb-2">Playground & Sports</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Extensive outdoor and indoor sports facilities including Football, Cricket, and Athletics to maintain physical fitness.
+                    </p>
+                </div>
+            </div>
+
+            <div class="facility-card bg-white rounded-xl shadow-md overflow-hidden border-b-4 border-[#D4AF37]">
+                <div class="h-48 bg-gray-200 flex items-center justify-center text-5xl">🚌</div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-[#002147] mb-2">Transport & Safety</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        GPS-enabled bus services and 24/7 CCTV surveillance across the campus to ensure the safety of every child.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
     <script src="script.js"></script>
 </body>
 </html>

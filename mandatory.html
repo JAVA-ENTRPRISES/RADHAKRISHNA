@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandatory Disclosure | Bright Future Public School</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* INLINE EMERGENCY STYLES - This ensures visibility even if style.css fails */
+        body { margin: 0; padding: 0; background-color: #f8fafc; font-family: 'Inter', sans-serif; }
+        
+        /* This pushes the content down so the fixed header doesn't cover it */
+        .safe-wrapper {
+            padding-top: 140px; 
+            padding-bottom: 80px;
+            min-height: 100vh;
+        }
+
+        .disclosure-container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+        }
+
+        .main-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 900;
+            text-align: center;
+            color: #2d1b69;
+            margin-bottom: 50px;
+        }
+
+        .disclosure-header {
+            background: #2d1b69;
+            color: #f59e0b;
+            padding: 15px 25px;
+            border-radius: 12px 12px 0 0;
+            font-size: 1.1rem;
+            margin-top: 40px;
+            display: inline-block;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .disclosure-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            border-radius: 0 12px 12px 12px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+
+        .disclosure-table th {
+            background: #f1f5f9;
+            color: #2d1b69;
+            text-align: left;
+            padding: 18px;
+            font-weight: 800;
+            border-bottom: 3px solid #f59e0b;
+        }
+
+        .disclosure-table td {
+            padding: 15px 18px;
+            border-bottom: 1px solid #e2e8f0;
+            color: #475569;
+            font-size: 0.95rem;
+        }
+
+        .doc-btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+            color: white !important;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .doc-btn:hover { transform: scale(1.05); }
+
+        .result-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .result-grid { grid-template-columns: 1fr; }
+            .disclosure-container { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <div class="safe-wrapper">
+        <section class="disclosure-container">
+            
+            <h1 class="main-title">Mandatory Public Disclosure</h1>
+
+            <h3 class="disclosure-header">A: General Information</h3>
+            <table class="disclosure-table">
+                <tr><th>Information</th><th>Details</th></tr>
+                <tr><td>Name of the School</td><td>Bright Future Public School</td></tr>
+                <tr><td>Affiliation No.</td><td>[Affiliation Number]</td></tr>
+                <tr><td>School Code</td><td>[School Code]</td></tr>
+                <tr><td>Complete Address</td><td>Sambalpur, Odisha</td></tr>
+                <tr><td>Principal Name & Qualification</td><td>[Name], M.A., B.Ed.</td></tr>
+            </table>
+
+            <h3 class="disclosure-header">B: Documents and Information</h3>
+            <table class="disclosure-table">
+                <thead>
+                    <tr><th>SL NO.</th><th>DOCUMENTS / INFORMATION</th><th>UPLOAD DOCUMENTS</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>COPIES OF AFFILIATION/UPGRADATION LETTER</td><td><a href="#" class="doc-btn">VIEW DOCUMENTS</a></td></tr>
+                    <tr><td>2</td><td>COPIES OF TRUST/SOCIETY REGISTRATION</td><td><a href="#" class="doc-btn">VIEW DOCUMENTS</a></td></tr>
+                    <tr><td>3</td><td>COPY OF NO OBJECTION CERTIFICATE (NOC)</td><td><a href="#" class="doc-btn">VIEW DOCUMENTS</a></td></tr>
+                    <tr><td>4</td><td>COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT</td><td><a href="#" class="doc-btn">VIEW DOCUMENTS</a></td></tr>
+                    <tr><td>5</td><td>VALID BUILDING SAFETY CERTIFICATE</td><td><a href="#" class="doc-btn">VIEW DOCUMENTS</a></td></tr>
+                    <tr><td>6</td><td>VALID FIRE SAFETY CERTIFICATE</td><td><a href="#" class="doc-btn">VIEW DOCUMENTS</a></td></tr>
+                    <tr><td>7</td><td>COPY OF SELF CERTIFICATION FOR AFFILIATION</td><td><a href="#" class="doc-btn">VIEW DOCUMENTS</a></td></tr>
+                    <tr><td>8</td><td>VALID WATER, HEALTH AND SANITATION CERTIFICATES</td><td><a href="#" class="doc-btn">VIEW DOCUMENTS</a></td></tr>
+                </tbody>
+            </table>
+
+            <h3 class="disclosure-header">C: Result and Academics</h3>
+            <table class="disclosure-table">
+                <thead>
+                    <tr><th>SL NO.</th><th>DOCUMENTS / INFORMATION</th><th>UPLOAD DOCUMENTS</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>FEE STRUCTURE OF THE SCHOOL</td><td><a href="#" class="doc-btn">VIEW DOCUMENTS</a></td></tr>
+                    <tr><td>2</td><td>ANNUAL ACADEMIC CALENDAR</td><td><a href="#" class="doc-btn">VIEW DOCUMENTS</a></td></tr>
+                    <tr><td>3</td><td>LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)</td><td><a href="#" class="doc-btn">VIEW DOCUMENTS</a></td></tr>
+                    <tr><td>4</td><td>LIST OF PARENTS TEACHERS ASSOCIATION (PTA)</td><td><a href="#" class="doc-btn">VIEW DOCUMENTS</a></td></tr>
+                </tbody>
+            </table>
+
+            <h3 class="disclosure-header">D: Staff (Teaching)</h3>
+            <table class="disclosure-table">
+                <thead>
+                    <tr><th>SL NO.</th><th>INFORMATION</th><th>DETAILS</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>PRINCIPAL</td><td>01</td></tr>
+                    <tr><td>2</td><td>TOTAL NO. OF TEACHERS</td><td>20</td></tr>
+                    <tr><td>3</td><td>TEACHERS SECTION RATIO</td><td>1:15</td></tr>
+                    <tr><td>4</td><td>DETAILS OF SPECIAL EDUCATOR</td><td>01</td></tr>
+                    <tr><td>5</td><td>DETAILS OF COUNSELLOR</td><td>01</td></tr>
+                </tbody>
+            </table>
+
+            <div class="result-grid">
+                <div>
+                    <h3 class="disclosure-header" style="font-size: 0.9rem;">Result Class: X</h3>
+                    <table class="disclosure-table">
+                        <tr><th>YEAR</th><th>PASSED</th><th>%</th></tr>
+                        <tr><td>2025</td><td>--</td><td>--</td></tr>
+                    </table>
+                </div>
+                <div>
+                    <h3 class="disclosure-header" style="font-size: 0.9rem;">Result Class: XII</h3>
+                    <table class="disclosure-table">
+                        <tr><th>YEAR</th><th>PASSED</th><th>%</th></tr>
+                        <tr><td>2025</td><td>--</td><td>--</td></tr>
+                    </table>
+                </div>
+            </div>
+
+            <h3 class="disclosure-header">E: School Infrastructure</h3>
+            <table class="disclosure-table">
+                <thead>
+                    <tr><th>SL NO.</th><th>INFORMATION</th><th>DETAILS</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>TOTAL CAMPUS AREA (SQ MTR)</td><td>6075</td></tr>
+                    <tr><td>2</td><td>NO. AND SIZE OF THE CLASS ROOMS</td><td>15 | 46 Sq Mtr</td></tr>
+                    <tr><td>3</td><td>NO. AND SIZE OF LABORATORIES</td><td>03 | 56 Sq Mtr</td></tr>
+                    <tr><td>4</td><td>INTERNET FACILITY</td><td>YES</td></tr>
+                    <tr><td>5</td><td>NO. OF GIRLS TOILETS</td><td>08</td></tr>
+                    <tr><td>6</td><td>NO. OF BOYS TOILETS</td><td>08</td></tr>
+                    <tr><td>7</td><td>INSPECTION VIDEO</td><td><a href="#" class="doc-btn">WATCH VIDEO</a></td></tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

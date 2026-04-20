@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <li><a href="facilities.html" style="color: white; text-decoration: none; font-weight: 600;">Facilities</a></li>
                 <li><a href="gallery.html" style="color: white; text-decoration: none; font-weight: 600;">Gallery</a></li>
                 <li><a href="admission.html" style="color: white; text-decoration: none; font-weight: 600;">Admission</a></li>
-                <li><a href="disclosure.html" style="color: white; text-decoration: none; font-weight: 600;">Disclosure</a></li>
+                <li><a href="mandatory.html" style="color: white; text-decoration: none; font-weight: 600;">Mandatory Disclosure</a></li>
                 <li><a href="contact.html" style="color: white; text-decoration: none; font-weight: 600;">Contact</a></li>
             </ul>
         </div>
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <ul style="list-style: none; padding: 0; font-size: 0.85rem; line-height: 2;">
                     <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
                     <li><a href="admission.html" style="color: white; text-decoration: none;">Admissions</a></li>
-                    <li><a href="disclosure.html" style="color: white; text-decoration: none;">Mandatory Disclosure</a></li>
+                    <li><a href="mandatory.html" style="color: white; text-decoration: none;">Mandatory Disclosure</a></li>
                 </ul>
             </div>
 

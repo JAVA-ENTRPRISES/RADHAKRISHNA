@@ -3,46 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Gallery | BRIGHT FUTURE PUBLIC SCHOOL</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Photo Gallery | Radha Krishna EMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .gallery-item { overflow: hidden; border-radius: 12px; cursor: pointer; position: relative; }
+        .gallery-item img { transition: transform 0.5s ease; width: 100%; height: 250px; object-fit: cover; }
+        .gallery-item:hover img { transform: scale(1.1); }
+        .overlay { 
+            position: absolute; inset: 0; background: rgba(0, 33, 71, 0.7); 
+            display: flex; align-items: center; justify-content: center; 
+            opacity: 0; transition: 0.3s; color: #D4AF37; font-weight: bold;
+        }
+        .gallery-item:hover .overlay { opacity: 1; }
+    </style>
 </head>
-<body>
-    <div id="header-placeholder"></div>
+<body class="bg-gray-50">
 
-    <main class="container">
-        <header class="page-title-section">
-            <span class="eyebrow">Visual Journey</span>
-            <h1>Life at St. Xavier's</h1>
-        </header>
+    <div id="header"></div>
 
-        <div class="gallery-filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="campus">Campus</button>
-            <button class="filter-btn" data-filter="events">Events</button>
-            <button class="filter-btn" data-filter="sports">Sports</button>
+    <section class="bg-[#002147] py-16 text-center text-white border-b-4 border-[#D4AF37]">
+        <h1 class="text-4xl font-bold mb-2">School Life in Pictures</h1>
+        <p class="text-gray-300">Capturing moments of learning, sports, and celebration.</p>
+    </section>
+
+    <div class="flex justify-center gap-4 py-8">
+        <button class="px-6 py-2 bg-[#D4AF37] text-[#002147] font-bold rounded-full text-sm">ALL PHOTOS</button>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 pb-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                        <div class="gallery-item shadow-lg">
+                <img src="./image/school corridor.jpg" alt="Library">
+                <div class="overlay text-xl">corridor</div>
+            </div>
+               
+                        <div class="gallery-item shadow-lg">
+                <img src="./image/class roon.jpg" alt="Library">
+                <div class="overlay text-xl">Class Room</div>
+            </div>
+
+            
+            <div class="gallery-item shadow-lg">
+                <img src="./image/smart class room.avif" alt="Classroom Learning">
+                <div class="overlay text-xl">Smart Classroom</div>
+            </div>
+
+            <div class="gallery-item shadow-lg">
+                <img src="./image/science lab.avif" alt="Science Lab">
+                <div class="overlay text-xl">Science Lab</div>
+            </div>
+
+            <div class="gallery-item shadow-lg">
+                <img src="./image/sports day.avif" alt="Yoga Day">
+                <div class="overlay text-xl">Sports Day</div>
+            </div>
+
+            <div class="gallery-item shadow-lg">
+                <img src="./image/annual function.avif" alt="Graduation">
+                <div class="overlay text-xl">Annual Function</div>
+            </div>
+
+            <div class="gallery-item shadow-lg">
+                <img src="./image/computer lab.jpg" alt="Group Activity">
+                <div class="overlay text-xl">Computer Lab</div>
+            </div>
+
+            <div class="gallery-item shadow-lg">
+                <img src="./image/library.webp" alt="Library">
+                <div class="overlay text-xl">Library</div>
+            </div>
+                        <div class="gallery-item shadow-lg">
+                <img src="./image/music room.jpg" alt="Music Room">
+                <div class="overlay text-xl">Music Room</div>
+            </div>
+            
+
+
         </div>
+    </div>
 
-        <div class="gallery-grid">
-            <div class="gallery-item campus">
-                <img src="https://images.unsplash.com/photo-1599666503851-9336d376c69f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Library">
-                <div class="overlay"><span>Hi-Tech Library</span></div>
-            </div>
-            <div class="gallery-item events">
-                <img src="https://images.unsplash.com/photo-1541339907198-e08756defefe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Graduation">
-                <div class="overlay"><span>Annual Day</span></div>
-            </div>
-            <div class="gallery-item sports">
-                <img src="https://images.unsplash.com/photo-1518611012118-ff6c7476e736?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Track">
-                <div class="overlay"><span>Athletics Meet</span></div>
-            </div>
-            <div class="gallery-item campus">
-                <img src="https://images.unsplash.com/photo-1562774053-701939374585?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400" alt="Lab">
-                <div class="overlay"><span>Robotics Lab</span></div>
-            </div>
-             </div>
-    </main>
+    <div id="footer"></div>
 
-    <div id="footer-placeholder"></div>
     <script src="script.js"></script>
 </body>
 </html>

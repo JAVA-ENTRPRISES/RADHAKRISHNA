@@ -3,63 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | BRIGHT FUTURE PUBLIC SCHOOL</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contact Us | Radha Krishna EMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div id="header-placeholder"></div>
+<body class="bg-gray-50">
+    <div id="header"></div>
 
-    <main class="contact-page container">
-        <div class="contact-grid">
-            
-            <div class="contact-info-panel">
-                <span class="eyebrow">Reach Out</span>
-                <h1>Connect With Us</h1>
-                <p class="description">Have questions about admissions, our curriculum, or facilities? We are here to help.</p>
-                
-                <div class="info-block">
-                    <h4>Visit Us</h4>
-                    <p>123 Education Lane, Bhubaneswar, Odisha</p>
-                </div>
-                <div class="info-block">
-                    <h4>Call Us</h4>
-                    <p>+91 674 1234567</p>
-                </div>
-                <div class="info-block">
-                    <h4>Email Us</h4>
-                    <p>admission@stxaviers.edu</p>
-                </div>
-            </div>
-
-            <div class="contact-form-panel">
-                <form>
-                    <div class="input-group">
-                        <label>Your Name</label>
-                        <input type="text" placeholder="John Doe" required>
-                    </div>
-                    <div class="input-group">
-                        <label>Email Address</label>
-                        <input type="email" placeholder="john@example.com" required>
-                    </div>
-                    <div class="input-group">
-                        <label>Subject</label>
-                        <select>
-                            <option>Admission Inquiry</option>
-                            <option>General Question</option>
-                            <option>Appointment Request</option>
-                        </select>
-                    </div>
-                    <div class="input-group">
-                        <label>Message</label>
-                        <textarea rows="5" placeholder="Your query here..."></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary form-submit">Send Message</button>
-                </form>
+    <div class="max-w-4xl mx-auto my-16 grid grid-cols-1 md:grid-cols-2 gap-10 px-6">
+        <div>
+            <h2 class="text-3xl font-bold text-[#002147] mb-4">Get In Touch</h2>
+            <p class="text-gray-600 mb-6">Have questions? Reach out to our administrative office.</p>
+            <div class="space-y-4">
+                <p><strong>📞 Phone:</strong> +91 9437526772</p>
+                <p><strong>📧 Email:</strong> radhakrishnaemschool1@gmail.com</p>
+                <p><strong>📍 Location:</strong> Gudari, Rayagada, Odisha</p>
             </div>
         </div>
-    </main>
+        <form class="bg-white p-6 shadow-md rounded-lg">
+            <input type="text" placeholder="Your Name" class="w-full border p-2 mb-4 rounded">
+            <input type="email" placeholder="Your Email" class="w-full border p-2 mb-4 rounded">
+            <textarea placeholder="Your Message" class="w-full border p-2 mb-4 rounded h-32"></textarea>
+            <button class="w-full bg-[#002147] text-white py-2 rounded">Send Message</button>
+        </form>
+    </div>
 
-    <div id="footer-placeholder"></div>
+    <div id="footer"></div>
     <script src="script.js"></script>
 </body>
 </html>
